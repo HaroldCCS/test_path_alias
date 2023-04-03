@@ -6,6 +6,11 @@
  */
 
 module.exports = {
+  resolver: {
+    extraNodeModules: {
+      '@components': './src/components',
+    },
+  },
   transformer: {
     getTransformOptions: async () => ({
       transform: {
